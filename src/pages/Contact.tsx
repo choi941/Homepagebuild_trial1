@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Contact() {
   return (
     <div className="bg-white text-zinc-900 min-h-screen py-20 transition-colors duration-300">
