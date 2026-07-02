@@ -27,7 +27,7 @@ export default function Contact() {
           <p className="mt-5 text-base text-zinc-600 leading-relaxed break-keep"
             style={{ wordBreak: 'keep-all' }}>
             AD + T Lab welcomes applicants interested in exploring the combination of 
-            architectural design and technology in the listed areas under research interests. <br />
+            architectural design and technology in the listed areas under research interests. 
             Applications are open for both master's and doctoral degrees. <br />
             While a portfolio is not a requirement for application, it is recommended for those with a 
             design background. <br />
