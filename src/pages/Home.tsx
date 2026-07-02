@@ -19,7 +19,7 @@ export default function Home() {
       */}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full min-h-[calc(100vh-80px)] flex flex-col justify-between pt-24 pb-10">
-        
+
         {/* 본문 블록 전체를 위로 끌어올린 레이아웃 유지 */}
         <div className="max-w-4xl space-y-8 text-left my-auto w-full -translate-y-16">
           <div className="inline-flex px-3 py-1.5 rounded-full border border-lime-650/20 bg-lime-50 text-lime-700 text-xs font-semibold tracking-wider uppercase">
@@ -33,32 +33,26 @@ export default function Home() {
 
           {/* Hashtags Container */}
           <div className="w-full overflow-hidden pt-2">
-            
+
             {/* [완벽한 무한 루프 구조]
               - 외부 창(w-full overflow-hidden) 안에서 
               - animate-scroll을 하나의 큰 배너(flex flex-nowrap)에 한 번만 줍니다.
             */}
             <div className="lg:hidden w-full overflow-hidden relative">
-              <div className="flex flex-nowrap gap-x-6 w-max animate-scroll">
-                
+              <div className="flex w-max animate-scroll whitespace-nowrap">
                 {/* 1번 원본 세트 */}
-                <div className="flex flex-nowrap gap-x-6 shrink-0">
-                  {hashtags.map((tag) => (
-                    <span key={tag} className="font-mono text-sm font-semibold text-zinc-700 cursor-default">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+                {hashtags.map((tag) => (
+                  <span key={tag} className="font-mono text-sm font-semibold text-zinc-700 cursor-default mr-6">
+                    {tag}
+                  </span>
+                ))}
                 
                 {/* 2번 복사본 세트 (원래 간격을 유지하며 완벽하게 이어붙임) */}
-                <div className="flex flex-nowrap gap-x-6 shrink-0" aria-hidden="true">
-                  {hashtags.map((tag, index) => (
-                    <span key={`${tag}-dup-${index}`} className="font-mono text-sm font-semibold text-zinc-700 cursor-default">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
+                {hashtags.map((tag, index) => (
+                  <span key={`${tag}-dup-${index}`} className="font-mono text-sm font-semibold text-zinc-700 cursor-default mr-6" aria-hidden="true">
+                    {tag}
+                  </span>
+                ))}
               </div>
             </div>
 
