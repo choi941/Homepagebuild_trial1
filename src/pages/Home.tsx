@@ -19,8 +19,8 @@ export default function Home() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full min-h-[calc(100vh-80px)] flex flex-col justify-between pt-24 pb-10">
         
-        {/* 수정된 부분: my-auto 대신 mt-auto와 mb-[15vh]를 주어 본문을 미세하게 위로 끌어올림 */}
-        <div className="max-w-4xl space-y-8 text-left mt-auto mb-[15vh] w-full">
+        {/* 수정된 부분: my-auto 기반으로 정렬을 고정하되, -translate-y-16을 추가하여 본문을 위로 깔끔하게 쳐올림 */}
+        <div className="max-w-4xl space-y-8 text-left my-auto w-full -translate-y-16">
           <div className="inline-flex px-3 py-1.5 rounded-full border border-lime-650/20 bg-lime-50 text-lime-700 text-xs font-semibold tracking-wider uppercase">
             <span>Research Laboratory</span>
           </div>
