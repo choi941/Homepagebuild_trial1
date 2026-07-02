@@ -27,9 +27,9 @@ export default function Contact() {
           <p className="mt-5 text-base text-zinc-600 leading-relaxed break-keep"
             style={{ wordBreak: 'keep-all' }}>
             AD + T Lab welcomes applicants interested in exploring the combination of 
-            architectural design and technology in the listed areas under research interests. 
-            Applications are open for both master's and doctoral degrees. While a portfolio 
-            is not a requirement for application, it is recommended for those with a 
+            architectural design and technology in the listed areas under research interests. <br />
+            Applications are open for both master's and doctoral degrees. <br />
+            While a portfolio is not a requirement for application, it is recommended for those with a 
             design background. <br />
             Proficiency in English (both writing and speaking) is desired due to our international collaborations and publications. <br />
             Additionally, it is highly recommended to get in touch before submitting your application.
