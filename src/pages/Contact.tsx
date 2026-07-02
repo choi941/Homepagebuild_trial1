@@ -39,8 +39,8 @@ export default function Contact() {
           <p className="mt-4 text-sm text-zinc-500 leading-6 break-keep border-l-2 border-zinc-200 pl-5"
             style={{ wordBreak: 'keep-all' }}>
             AD + T Lab은 건축 설계와 기술의 융합을 다양한 연구 분야에서 탐구하고자 하는 지원자를 환영합니다. 
-            연구 희망자는 석사 또는 박사 학위 과정으로 지원 가능합니다. 포트폴리오는 필수 제출 서류는 아니지만, 
-            설계 관련 배경이 있는 경우 제출을 권장합니다. <br />
+            연구 희망자는 석사 또는 박사 학위 과정으로 지원 가능합니다. <br />
+            포트폴리오는 필수 제출 서류는 아니지만, 설계 관련 배경이 있는 경우 제출을 권장합니다. <br />
             국제 연구 협력과 국제 저널 발표를 위해 영어 작문 및 회화 능력이 요구되며, 관심 있는 지원자는 사전 연락을 권장합니다.
           </p>
         </div>
