@@ -16,9 +16,19 @@ export default function Footer() {
               <li><Link to="/research" className="hover:text-lime-600">Research</Link></li>
               <li>
                 <span className="text-zinc-400 select-none">Members</span>
-                <ul className="mt-1 space-y-1">
-                  <li><Link to="/professor" className="hover:text-lime-600">Professor</Link></li>
-                  <li><Link to="/researchers" className="hover:text-lime-600">Researchers</Link></li>
+                <ul className="mt-1.5 pl-4 border-l border-zinc-200 space-y-1.5 text-xs text-zinc-500">
+                  <li>
+                    <Link to="/professor" className="hover:text-lime-600 flex items-center gap-1.5">
+                      <span className="w-1 h-1 rounded-full bg-zinc-300"></span>
+                      Professor
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/researchers" className="hover:text-lime-600 flex items-center gap-1.5">
+                      <span className="w-1 h-1 rounded-full bg-zinc-300"></span>
+                      Researchers
+                    </Link>
+                  </li>
                 </ul>
               </li>
               <li><Link to="/contact" className="hover:text-lime-600">Contact</Link></li>
