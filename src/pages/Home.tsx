@@ -13,8 +13,7 @@ export default function Home() {
   return (
     <section className="relative min-h-[calc(100vh-80px)] w-full flex items-center overflow-hidden bg-white text-zinc-900 transition-colors duration-300">
       {/* [배경 미디어 일시 제외] */}
-      {/* 
-      <video autoPlay muted loop playsInline src="/background.mp4" className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none" />
+      {/* <video autoPlay muted loop playsInline src="/background.mp4" className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none" />
       <div className="absolute inset-0 bg-white/80 z-1" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(101,163,13,0.06),rgba(255,255,255,0))] z-2 pointer-events-none" />
       */}
@@ -35,31 +34,32 @@ export default function Home() {
           {/* Hashtags Container */}
           <div className="w-full overflow-hidden pt-2">
             
-            {/* 
-              [수정된 모바일 파트]: 
-              - flex-nowrap으로 줄바꿈을 절대 금지하고, gap을 통일했습니다.
-              - animate-scroll이 적용되는 두 그룹이 완벽하게 대칭을 이루도록 분리했습니다.
+            {/* [완벽한 무한 루프 구조]
+              - 외부 창(w-full overflow-hidden) 안에서 
+              - animate-scroll을 하나의 큰 배너(flex flex-nowrap)에 한 번만 줍니다.
             */}
-            <div className="lg:hidden w-full overflow-hidden relative flex flex-nowrap gap-x-6">
-              
-              {/* 첫 번째 세트 */}
-              <div className="flex shrink-0 gap-x-6 animate-scroll whitespace-nowrap">
-                {hashtags.map((tag) => (
-                  <span key={tag} className="font-mono text-sm font-semibold text-zinc-700 cursor-default">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-              
-              {/* 두 번째 세트 (복사본: 첫 번째 세트 뒤에 공백 없이 바로 붙어서 끊김을 방지함) */}
-              <div className="flex shrink-0 gap-x-6 animate-scroll whitespace-nowrap" aria-hidden="true">
-                {hashtags.map((tag) => (
-                  <span key={`${tag}-dup`} className="font-mono text-sm font-semibold text-zinc-700 cursor-default">
-                    {tag}
-                  </span>
-                ))}
-              </div>
+            <div className="lg:hidden w-full overflow-hidden relative">
+              <div className="flex flex-nowrap gap-x-6 w-max animate-scroll">
+                
+                {/* 1번 원본 세트 */}
+                <div className="flex flex-nowrap gap-x-6 shrink-0">
+                  {hashtags.map((tag) => (
+                    <span key={tag} className="font-mono text-sm font-semibold text-zinc-700 cursor-default">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                
+                {/* 2번 복사본 세트 (원래 간격을 유지하며 완벽하게 이어붙임) */}
+                <div className="flex flex-nowrap gap-x-6 shrink-0" aria-hidden="true">
+                  {hashtags.map((tag, index) => (
+                    <span key={`${tag}-dup-${index}`} className="font-mono text-sm font-semibold text-zinc-700 cursor-default">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
 
+              </div>
             </div>
 
             {/* Desktop: Static Grid */}
