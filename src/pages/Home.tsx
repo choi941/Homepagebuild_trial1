@@ -18,7 +18,9 @@ export default function Home() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(101,163,13,0.06),rgba(255,255,255,0))] z-2 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full min-h-[calc(100vh-80px)] flex flex-col justify-between pt-24 pb-10">
-        <div className="max-w-4xl space-y-8 text-left my-auto w-full">
+        
+        {/* 수정된 부분: my-auto 대신 mt-auto와 mb-[15vh]를 주어 본문을 미세하게 위로 끌어올림 */}
+        <div className="max-w-4xl space-y-8 text-left mt-auto mb-[15vh] w-full">
           <div className="inline-flex px-3 py-1.5 rounded-full border border-lime-650/20 bg-lime-50 text-lime-700 text-xs font-semibold tracking-wider uppercase">
             <span>Research Laboratory</span>
           </div>
