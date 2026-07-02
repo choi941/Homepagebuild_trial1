@@ -53,7 +53,7 @@ export default function Footer() {
               <img
                 src="/logo_footer.png"
                 alt="AD+T Lab Footer Logo"
-                className="h-20 sm:h-28 w-auto object-contain"
+                className="h-26 sm:h-26 w-auto object-contain"
               />
             </div>
           </div>
