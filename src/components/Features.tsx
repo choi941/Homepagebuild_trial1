@@ -36,7 +36,7 @@ export default function Features() {
 
   return (
     <section id="research" className="py-24 bg-zinc-900 border-t border-zinc-800 min-h-[60vh] flex items-center transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">

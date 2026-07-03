@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <div className="bg-white text-zinc-900 min-h-screen py-20 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-[1600px] mx-auto px-8">
 
         {/* ── Page header ── */}
         <div className="space-y-4 mb-14">
@@ -101,7 +101,7 @@ export default function Contact() {
           </div>
 
           {/* RIGHT: Google Maps embed (연세대 생활과학대학 좌표) */}
-          <div className="rounded-xl overflow-hidden shadow-lg h-96 w-full mt-8">
+          <div className="rounded-xl overflow-hidden shadow-lg h-96 w-full max-w-2xl mx-auto lg:mx-0 mt-8">
             <iframe
               title="AD+T Lab Location — Yonsei University"
               width="100%"
@@ -111,7 +111,7 @@ export default function Contact() {
               allowFullScreen
               referrerPolicy="strict-origin-when-cross-origin"
               // 연세대학교 생활과학대학(삼성관) 좌표 적용
-              src="https://www.google.com/maps?q=37.5649,126.9343&z=17&output=embed"
+              src="https://www.google.com/maps?q=37.5649,126.9343&z=15&output=embed"
             />
           </div>
 

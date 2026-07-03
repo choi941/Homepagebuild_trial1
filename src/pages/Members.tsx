@@ -33,7 +33,7 @@ export default function Members() {
 
   return (
     <div className="bg-zinc-50 text-zinc-900 min-h-screen py-16 sm:py-20 transition-colors duration-300">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         {/* Header */}
         <div className="space-y-4">
@@ -50,7 +50,7 @@ export default function Members() {
         </div>
 
         {/* Members Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto pt-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1400px] mx-auto pt-4">
           {members.map((member, idx) => (
             <div
               key={idx}

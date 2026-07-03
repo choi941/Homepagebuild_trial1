@@ -50,7 +50,7 @@ export default function Research() {
 
   return (
     <div className="bg-zinc-50 text-zinc-900 min-h-screen py-12 sm:py-16 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-[1600px] mx-auto px-8">
         <h1 className="text-4xl font-extrabold text-zinc-950 mb-6">Research &amp; Publications</h1>
         <div className="flex space-x-3 mb-8">
           {categories.map(cat => (

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import InteractiveBackground from '../components/InteractiveBackground';
 
 export default function Home() {
   const hashtags = [
@@ -12,16 +13,13 @@ export default function Home() {
 
   return (
     <section className="relative min-h-[calc(100vh-80px)] w-full flex items-center overflow-hidden bg-white text-zinc-900 transition-colors duration-300">
-      {/* [배경 미디어 일시 제외] */}
-      {/* <video autoPlay muted loop playsInline src="/background.mp4" className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none" />
-      <div className="absolute inset-0 bg-white/80 z-1" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(101,163,13,0.06),rgba(255,255,255,0))] z-2 pointer-events-none" />
-      */}
+      {/* Interactive generative art canvas background */}
+      <InteractiveBackground />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full min-h-[calc(100vh-80px)] flex flex-col justify-between pt-24 pb-10">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full min-h-[calc(100vh-80px)] flex flex-col justify-between pt-24 pb-10">
 
         {/* 본문 블록 전체를 위로 끌어올린 레이아웃 유지 */}
-        <div className="max-w-4xl space-y-8 text-left my-auto w-full -translate-y-16">
+        <div className="max-w-[1100px] space-y-8 text-left my-auto w-full -translate-y-16">
           <div className="inline-flex px-3 py-1.5 rounded-full border border-lime-650/20 bg-lime-50 text-lime-700 text-xs font-semibold tracking-wider uppercase">
             <span>Research Laboratory</span>
           </div>

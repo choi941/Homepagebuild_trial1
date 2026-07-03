@@ -11,7 +11,7 @@ export default function About() {
 
   return (
     <div className="bg-zinc-50 text-zinc-900 min-h-screen py-16 sm:py-20 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-8 space-y-16">
+      <div className="max-w-[1600px] mx-auto px-8 space-y-16">
         
         {/* Section Header */}
         <div className="space-y-4">

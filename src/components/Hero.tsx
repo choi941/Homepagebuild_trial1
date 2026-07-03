@@ -27,8 +27,8 @@ export default function Hero() {
       {/* Grid pattern overlay for tech aesthetics */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(199,255,0,0.04),rgba(255,255,255,0))] z-2 pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-12 pb-24 md:py-32">
-        <div className="max-w-4xl space-y-6 sm:space-y-8">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-12 pb-24 md:py-32">
+        <div className="max-w-[1100px] space-y-6 sm:space-y-8">
           
           {/* Tagline / Subtitle */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-lime-accent/20 bg-lime-accent/5 text-lime-accent text-xs font-semibold tracking-wider uppercase">
